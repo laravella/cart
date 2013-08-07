@@ -1,4 +1,4 @@
-<?php class CartDatabaseSeeder extends Seeder {
+<?php class ProductsSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.
