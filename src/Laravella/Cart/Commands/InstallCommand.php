@@ -1,4 +1,4 @@
-<?php namespace Laravella/Cart;
+<?php namespace Laravella\Cart;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
@@ -37,7 +37,7 @@ class InstallCommand extends Command {
 	 */
 	public function fire()
 	{
-		//
+		$this->info('Update complete.');
 	}
 
 	/**
