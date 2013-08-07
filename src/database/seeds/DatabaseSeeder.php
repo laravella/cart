@@ -10,6 +10,7 @@ class CartDatabaseSeeder extends Seeder {
 	public function run()
 	{
 		$this->call('ProductsSeeder');
+                $this->command->info('Products table seeded.');
 	}
 
 }
