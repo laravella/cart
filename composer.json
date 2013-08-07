@@ -16,7 +16,10 @@
             "src/controllers",
             "src/commands",
             "src/migrations"
-        ]
+        ],
+        "psr-0": {
+            "Laravella\\Cart": "src/"
+        }
     },
     "minimum-stability": "dev"
 }
