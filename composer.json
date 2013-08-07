@@ -1,0 +1,21 @@
+{
+    "name": "laravella/cart",
+    "description": "A shopping cart",
+    "authors": [
+        {
+            "name": "laravella",
+            "email": "laravella.cms@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers",
+            "src/migrations"
+        ]
+    },
+    "minimum-stability": "dev"
+}
