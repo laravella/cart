@@ -18,6 +18,8 @@ class CreateProductsTable extends Migration {
 			$table->string('description')->nullable();
 			$table->string('size')->nullable();
 			$table->string('model')->nullable();
+			$table->string('gallery_id')->nullable();
+			$table->string('media_id')->nullable();
 			$table->timestamps();
 		});
             }
