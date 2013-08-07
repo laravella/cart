@@ -75,5 +75,23 @@ class CartServiceProvider extends ServiceProvider {
 		);
                 
 	}	
+        
+	public function registerCartInstallCommand()
+	{
+		$this->app['command.cart.install'] = $this->app->share(function($app)
+		{
+			return new CartInstallCommand();
+		});
+	}
+
+	public function registerCartUpdateCommand()
+	{
+		$this->app['command.cart.update'] = $this->app->share(function($app)
+		{
+			return new CartUpdateCommand();
+		});
+	}
+
+        
 
 }
