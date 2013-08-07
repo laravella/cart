@@ -60,10 +60,9 @@ class CartServiceProvider extends ServiceProvider {
 	/** register the custom commands **/
 	public function registerCommands()
 	{
-            Artisan::add(new InstallCommand);
-            Artisan::add(new UpdateCommand);
+//            Artisan::add(new InstallCommand);
+//            Artisan::add(new UpdateCommand);
             
-            /*
 		$commands = array('CartInstall','CartUpdate');
 
 		foreach ($commands as $command)
@@ -74,7 +73,6 @@ class CartServiceProvider extends ServiceProvider {
 		$this->commands(
 			'command.cart.install','command.cart.update'
 		);
-           */
                 
 	}	
 
