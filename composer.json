@@ -15,7 +15,7 @@
         "classmap": [
             "src/controllers",
             "src/commands",
-            "src/database/migrations",
+            "src/migrations",
             "src/database/seeds"
         ],
         "psr-0": {
