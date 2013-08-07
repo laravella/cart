@@ -4,21 +4,21 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-class InstallCommand extends Command {
+class CartUpdateCommand extends Command {
 
 	/**
 	 * The console command name.
 	 *
 	 * @var string
 	 */
-	protected $name = 'cart:install';
+	protected $name = 'cart:update';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Install the shopping cart.';
+	protected $description = 'Update the shopping cart.';
 
 	/**
 	 * Create a new command instance.
