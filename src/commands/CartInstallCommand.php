@@ -37,7 +37,9 @@ class CartInstallCommand extends Command {
 	 */
 	public function fire()
 	{
-		$this->info('Update complete.');
+                $this->call('migrate',array('--package'=>'laravella/cart'));
+		$this->call('db:seed',array('--class'=>'CartDatabaseSeeder'));
+		$this->info('Cart installation complete.');
 	}
 
 	/**
@@ -48,7 +50,7 @@ class CartInstallCommand extends Command {
 	protected function getArguments()
 	{
 		return array(
-			array('example', InputArgument::REQUIRED, 'An example argument.'),
+			//array('example', InputArgument::REQUIRED, 'An example argument.'),
 		);
 	}
 
@@ -60,7 +62,7 @@ class CartInstallCommand extends Command {
 	protected function getOptions()
 	{
 		return array(
-			array('example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null),
+			//array('example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null),
 		);
 	}
 
