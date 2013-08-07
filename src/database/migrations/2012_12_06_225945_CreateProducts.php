@@ -1,8 +1,5 @@
-<?php
-
-use Illuminate\Database\Schema\Blueprint;
+<?php use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreateProductsTable extends Migration {
 
 	/**
