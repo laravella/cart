@@ -1,6 +1,6 @@
 <?php
 
-class CartDatabaseSeeder extends Seeder {
+class DatabaseSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.
