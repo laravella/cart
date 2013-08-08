@@ -1,9 +1,4 @@
-<?php
-namespace Laravella\Cart;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+<?php namespace Laravella\Cart;
 
 /**
  * Description of MysqlGopher
@@ -11,9 +6,12 @@ namespace Laravella\Cart;
  * @author Victor
  */
 class MysqlGopher {
-    public function connect() {
+
+    public function connect()
+    {
         return "Laravella\Cart\DbGopher\greeting";
     }
+
 }
 
 ?>

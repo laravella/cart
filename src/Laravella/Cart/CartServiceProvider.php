@@ -43,6 +43,7 @@ class CartServiceProvider extends ServiceProvider {
             {
               $loader = \Illuminate\Foundation\AliasLoader::getInstance();
               $loader->alias('DbGopher', 'Laravella\Cart\Facades\DbGopher');
+              $loader->alias('MysqlGopher', 'Laravella\Cart\Facades\MysqlGopher');
             });
 	}
 
