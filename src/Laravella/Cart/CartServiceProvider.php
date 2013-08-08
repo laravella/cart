@@ -23,7 +23,6 @@ class CartServiceProvider extends ServiceProvider {
 		include __DIR__.'/../../routes/routes.php';         
 		
 		$this->registerCommands();
-
 				
 	}
 

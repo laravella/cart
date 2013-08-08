@@ -1,1 +1,1 @@
-<p>DbView</p>
+<p>Cart View</p>
