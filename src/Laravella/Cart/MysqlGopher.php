@@ -7,9 +7,9 @@
  */
 class MysqlGopher {
 
-    public function connect()
+    public function connection()
     {
-        return "Laravella\Cart\DbGopher\greeting";
+        return "Laravella\Cart\DbGopher\connection";
     }
 
 }
