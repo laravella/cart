@@ -5,7 +5,7 @@
  *
  * @author Victor
  */
-class CartController extends BaseController {
+class DbController extends BaseController {
 
     public function getIndex()
     {

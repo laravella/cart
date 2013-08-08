@@ -2,7 +2,8 @@
 
     public function getIndex()
     {
-        return View::make("cart::dbview");
+        return "asdffdfdfdkjdas;fkljaq]pafsdg['ad'";
+        //return View::make("cart::dbview");
     }
 
     public function getHello($table = "") 
@@ -10,10 +11,15 @@
         return View::make("cart::dbview");
     }
     
-//    public function getConnection() {
-//        $mysqlGopher = app('MysqlGopher');
-//        return $mysqlGopher->connection();
-//    }
+    /**
+     * An example of IoC
+     * 
+     * @return type
+     */
+    public function getConnection() {
+        $mysqlGopher = app('MysqlGopher');
+        return $mysqlGopher->connection();
+    }
     
     public function getSelect($table = null)
     {
