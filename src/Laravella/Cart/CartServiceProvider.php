@@ -39,11 +39,16 @@ class CartServiceProvider extends ServiceProvider {
             return new DbGopher;
         });
 
+        $this->app['mysqlgopher'] = $this->app->share(function($app)
+        {
+            return new MysqlGopher;
+        });
+
         $this->app->booting(function()
             {
               $loader = \Illuminate\Foundation\AliasLoader::getInstance();
               $loader->alias('DbGopher', 'Laravella\Cart\Facades\DbGopher');
-              $loader->alias('MysqlGopher', 'Laravella\Cart\MysqlGopher');
+              $loader->alias('MysqlGopher', 'Laravella\Cart\Facades\MysqlGopher');
             });
 	}
 
