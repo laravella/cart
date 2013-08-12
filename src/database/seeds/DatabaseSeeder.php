@@ -1,5 +1,7 @@
 <?php namespace Laravella\Cart;
 
+use \Seeder;
+
 class DatabaseSeeder extends Seeder {
 
 	/**
