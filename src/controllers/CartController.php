@@ -2,12 +2,12 @@
 
     public function getIndex()
     {
-        return View::make("cart::dbview");
+        return View::make("cart::cartview");
     }
 
     public function getHello($table = "") 
     {
-        return View::make("cart::dbview");
+        return View::make("cart::cartview");
     }
     
     /**
