@@ -2,8 +2,7 @@
 
     public function getIndex()
     {
-        return "asdffdfdfdkjdas;fkljaq]pafsdg['ad'";
-        //return View::make("cart::dbview");
+        return View::make("cart::dbview");
     }
 
     public function getHello($table = "") 
