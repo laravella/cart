@@ -2,7 +2,7 @@
 
 use \Seeder;
 
-class DatabaseSeeder extends Seeder {
+class CartDatabaseSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.

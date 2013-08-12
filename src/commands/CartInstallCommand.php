@@ -38,7 +38,7 @@ class CartInstallCommand extends Command {
 	public function fire()
 	{
                 $this->call('migrate',array('--package'=>'laravella/cart'));
-		$this->call('db:seed',array('--class'=>'Laravella\\Cart\\DatabaseSeeder'));
+		$this->call('db:seed',array('--class'=>'Laravella\\Cart\\CartDatabaseSeeder'));
 		$this->info('Cart installation complete.');
 	}
 
