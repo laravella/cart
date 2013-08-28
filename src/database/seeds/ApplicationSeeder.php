@@ -1,4 +1,7 @@
-<?php 
+<?php  namespace Laravella\Cart;
+
+use \Seeder;
+use \Laravella\Crud;
 /**
  * Insert laravella specific data into the database
  */
@@ -13,6 +16,9 @@ class ApplicationSeeder extends Seeder {
         
 	public function run()
 	{
+//            SeedMenus::addMenu();
+//            SeedMenus::addAction();
+//            SeedMenus::addViews();
         }
         
 
