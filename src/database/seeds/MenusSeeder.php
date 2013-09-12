@@ -31,8 +31,8 @@ class MenusSeeder extends Seeder
                 
                 $this->__addMenu('divider', null, '', $cartId);
                 
-                $this->__addMenuPermissions($productsId, 'superadmin');
-                $this->__addMenuPermissions($productsId, 'admin');
+                $this->__addMenuPermissions($cartId, 'superadmin');
+                $this->__addMenuPermissions($cartId, 'admin');
                 
 	}
 }
