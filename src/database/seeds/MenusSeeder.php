@@ -29,7 +29,7 @@ class MenusSeeder extends Seeder
 
 //                Log::write('info', $adminId . ' admin id');
                 
-                $this->__addMenu('divider', null, '', $cartId);
+//                $this->__addMenu('divider', null, '', $cartId);
                 
                 $this->__addMenuPermissions($cartId, 'superadmin');
                 $this->__addMenuPermissions($cartId, 'admin');
