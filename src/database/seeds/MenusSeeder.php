@@ -2,7 +2,7 @@
 
 use Laravella\Crud\Log;
 
-class UlSeedMenus extends Seeder
+class MenuSeeder extends Seeder
 {
 
         private function __addMenu($label, $href, $iconClass = 'icon-file', $parentId = null) {
