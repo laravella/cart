@@ -23,7 +23,7 @@ class MenusSeeder extends Seeder
 	public function run()
 	{
 
-                $topId = DB::table('_db_menus')->where('label','Top Menu')->first()->id;
+                $topId = DB::table('_db_menus')->where('label','TopMenu')->first()->id;
                 $cartId = $this->__addMenu('Cart', '/db/select/products', 'icon-file', $topId);
                 $productsId = $this->__addMenu('Products', '/db/select/products', 'icon-file', $cartId);
 
