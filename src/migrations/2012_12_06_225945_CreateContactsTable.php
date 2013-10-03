@@ -23,7 +23,8 @@ class CreateContactsTable extends Migration {
 			$table->integer('address03')->unsigned()->nullable();
 			$table->integer('address04')->unsigned()->nullable();
 			$table->integer('postal_code')->unsigned()->nullable();
-			$table->timestamps();
+                        $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+                        $table->timestamp('updated_at')->default('0000-00-00 00:00:00');
 		});
             }
 	}
