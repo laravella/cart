@@ -1,7 +1,8 @@
 {
     "name": "laravella/cart",
     "description": "A shopping cart",
-    "keywords": ["ravel","laravel","cms"],
+    "version": "v4.0.20131105-beta",
+    "keywords": ["laravel","cms"],
     "license": "MIT",
     "authors": [
         {

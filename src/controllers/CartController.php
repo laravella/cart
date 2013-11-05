@@ -1,15 +1,18 @@
-<?php class CartController extends Controller {
+<?php 
+use Laravella\Crud\Params;
+
+class CartController extends DbController {
 
     public function getIndex()
     {
-        return View::make("cart::cartview");
+        $viewName = 'skins::'.Options::get('skin').'.frontview';
+        $params = new Params(self::SUCCESS, '', null, $viewName);
+        
+        return View::make('skins::'.Options::get('skin').'.frontend.default')
+                ->nest('content', $viewName, $params->asArray());
+        
     }
 
-    public function getHello($table = "") 
-    {
-        return View::make("cart::cartview");
-    }
-    
     /**
      * An example of IoC
      * 
@@ -18,16 +21,6 @@
     public function getConnection() {
         $mysqlGopher = app('MysqlGopher');
         return $mysqlGopher->connection();
-    }
-    
-    public function getSelect($table = null)
-    {
-        //return View::make("cart::dbview");
-    }
-
-    public function getTable($name = null)
-    {
-        die;
     }
 
     public function missingMethod($parameters = array())
