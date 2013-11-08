@@ -5,10 +5,10 @@ class CartController extends DbController {
 
     public function getIndex()
     {
-        $viewName = 'skins::'.Options::get('skin').'.frontview';
+        $viewName = Options::get('skin').'.frontview';
         $params = new Params(self::SUCCESS, '', null, $viewName);
         
-        return View::make('skins::'.Options::get('skin').'.frontend.default')
+        return View::make(Options::get('skin').'.frontend.default')
                 ->nest('content', $viewName, $params->asArray());
         
     }
