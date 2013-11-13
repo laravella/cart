@@ -3,12 +3,12 @@ use Laravella\Crud\Params;
 
 class CartController extends DbController {
 
-    public function getIndex()
+    public function getIndex($slug='')
     {
-        $viewName = Options::get('skin').'.frontview';
-        $params = new Params(self::SUCCESS, '', null, $viewName);
+        $viewName = Options::get('skin', 'frontend').'.frontview';
+        $params = new Params(true, self::SUCCESS, '', null, $viewName);
         
-        return View::make(Options::get('skin').'.frontend.default')
+        return View::make(Options::get('skin', 'frontend').'.frontend.default')
                 ->nest('content', $viewName, $params->asArray());
         
     }
