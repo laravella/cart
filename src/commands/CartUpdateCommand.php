@@ -38,7 +38,6 @@ class CartUpdateCommand extends Command {
 	public function fire()
 	{
 		$this->call('db:seed',array('--class'=>'Laravella\\Cart\\CartDatabaseSeeder'));
-		$this->call('db:seed',array('--class'=>'Laravella\\Cart\\ApplicationSeeder'));
 		$this->info('Update complete.');
 	}
 
