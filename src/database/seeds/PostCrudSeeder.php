@@ -7,7 +7,10 @@ class PostCrudSeeder extends CrudSeeder {
     {
         DB::table('contents')->delete();
         
-        $this->addContents('home', 'Cart', 'Welcome', 'Welcome to shopping cart');        
+        $contentId = $this->addContents('home', 'Cart', 'Welcome', 'Welcome');
+        //$this->linkPageToTable($slug, $tableName);
+        $this->linkContentToPage('home', 'contents_getpage');
+        
         echo "Cart::PostCrudSeeder done.\n";
         
     }
