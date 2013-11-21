@@ -5,11 +5,12 @@ class PostCrudSeeder extends CrudSeeder {
     
     public function run()
     {
-        DB::table('contents')->delete();
-        
-        $contentId = $this->addContents('home', 'Cart', 'Welcome', 'Welcome');
+        //create a record in the 'contents' table with the slug 'home'
+//        $contentId = $this->addContents('home', 'Cart', 'Welcome', 'Welcome');
+        //link a database table to a page (a record in _db_pages to a record in _db_tables
         //$this->linkPageToTable($slug, $tableName);
-        $this->linkContentToPage('home', 'contents_getpage');
+        //link the contents table to _db_pages
+//        $this->linkContentToPage('home', 'contents_getpage');
         
         echo "Cart::PostCrudSeeder done.\n";
         
