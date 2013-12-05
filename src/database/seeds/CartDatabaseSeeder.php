@@ -12,7 +12,6 @@ class CartDatabaseSeeder extends Seeder {
 	public function run()
 	{
 		$this->call('ProductsSeeder');
-		$this->call('MenusSeeder');
 		$this->call('PostCrudSeeder');
                 $this->command->info('Products table seeded.');
 	}
