@@ -2,7 +2,7 @@
 
 @section('search')
 
-<!-- firecracker::capetown.actions.getSearch -->
+<!-- cart::capetown.actions.getSearch -->
 
 @if($action == 'getSelect' || $action == 'getSearch')
 {{-- the search popup box --}}

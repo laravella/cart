@@ -14,7 +14,7 @@
 @include("skins::common.actions.getinsert")
 @include("skins::common.actions.getselect")
 
-@include("firecracker::capetown.actions.getpage")
+@include("cart::capetown.actions.getpage")
 
 @include("skins::common.inc.bottom")
 @include("skins::common.inc.footer")

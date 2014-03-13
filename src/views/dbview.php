@@ -1,1 +1,1 @@
-<p>Firecracker View</p>
+<p>Cart View</p>
